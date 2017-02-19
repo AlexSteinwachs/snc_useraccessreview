@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_properties_category_m2m">
+    <sys_properties_category_m2m action="INSERT_OR_UPDATE">
+        <category display_value="User Access Review">7a8139d14fc9f2009457ac118110c78d</category>
+        <order>820</order>
+        <property display_value="x_snc_userreview.assign_to" name="x_snc_userreview.assign_to">fcbe02d14f4df2009457ac118110c7c4</property>
+        <sys_class_name>sys_properties_category_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-02-19 06:43:59</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>174f4e154f4df2009457ac118110c7d6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_snc_userreview.assign_to.User Access Review</sys_name>
+        <sys_package display_value="User Access Review" source="x_snc_userreview">d8d41d554f49f2009457ac118110c76b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="User Access Review">d8d41d554f49f2009457ac118110c76b</sys_scope>
+        <sys_update_name>sys_properties_category_m2m_174f4e154f4df2009457ac118110c7d6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-02-19 06:44:43</sys_updated_on>
+    </sys_properties_category_m2m>
+</record_update>
