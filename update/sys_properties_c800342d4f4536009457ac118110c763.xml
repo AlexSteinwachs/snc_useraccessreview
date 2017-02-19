@@ -2,29 +2,29 @@
 <record_update table="sys_properties">
     <sys_properties action="INSERT_OR_UPDATE">
         <choices/>
-        <description>Certification Audit Definition record for the User Access Review process</description>
+        <description>Automatically look up the User from the User ID in the Access Levels table</description>
         <ignore_cache>false</ignore_cache>
         <is_private>false</is_private>
-        <name>x_snc_userreview.cert_audit_definition</name>
+        <name>x_snc_userreview.auto_lookup</name>
         <read_roles/>
-        <suffix>cert_audit_definition</suffix>
+        <suffix>auto_lookup</suffix>
         <sys_class_name>sys_properties</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-02-19 04:49:52</sys_created_on>
+        <sys_created_on>2017-02-19 18:27:07</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
-        <sys_id>5de4f1594fc9f2009457ac118110c7e3</sys_id>
-        <sys_mod_count>35</sys_mod_count>
-        <sys_name>x_snc_userreview.cert_audit_definition</sys_name>
+        <sys_id>c800342d4f4536009457ac118110c763</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>x_snc_userreview.auto_lookup</sys_name>
         <sys_package display_value="User Access Review" source="x_snc_userreview">d8d41d554f49f2009457ac118110c76b</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="User Access Review">d8d41d554f49f2009457ac118110c76b</sys_scope>
-        <sys_update_name>sys_properties_5de4f1594fc9f2009457ac118110c7e3</sys_update_name>
+        <sys_update_name>sys_properties_c800342d4f4536009457ac118110c763</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-02-19 17:56:37</sys_updated_on>
-        <type>string</type>
-        <value/>
+        <sys_updated_on>2017-02-19 18:49:03</sys_updated_on>
+        <type>boolean</type>
+        <value>true</value>
         <write_roles/>
     </sys_properties>
-    <sys_translated_text action="delete_multiple" query="documentkey=5de4f1594fc9f2009457ac118110c7e3"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=c800342d4f4536009457ac118110c763"/>
 </record_update>

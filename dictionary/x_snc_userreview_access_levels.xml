@@ -5,6 +5,7 @@
         <element calculation="if (current.user) {&#13;&#10;current.cmdb_ci.getDisplayValue() + ' - ' + current.user.getDisplayValue()&#13;&#10;} else {&#13;&#10;current.cmdb_ci.getDisplayValue() + ' - ' + current.user_id&#13;&#10;}" display="true" label="Name" max_length="256" name="name" read_only="true" type="string" virtual="true"/>
         <element label="Privileges" max_length="2000" name="privileges" type="string"/>
         <element label="reviewer" max_length="32" name="reviewer" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
         <element label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
         <element label="User ID" max_length="256" name="user_id" type="string"/>
         <index name="index">
