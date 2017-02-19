@@ -10,58 +10,37 @@
         <hint/>
         <homepage/>
         <image/>
-        <link_type>SCRIPT</link_type>
+        <link_type>LIST</link_type>
         <map_page/>
-        <mobile_title>Reset Instance</mobile_title>
+        <mobile_title>Results</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
-        <name/>
-        <order>930</order>
+        <name>cert_element</name>
+        <order>400</order>
         <override_menu_roles>false</override_menu_roles>
-        <query>if (x_snc_userreview.allow_reset) {&#13;
-//delete the audit definition&#13;
-var gr = new global.GlideRecord('cert_audit_definition');&#13;
-gr.addQuery('sys_id',gs.getProperty('x_snc_userreview.cert_audit_definition'));&#13;
-gr.query();&#13;
-while (gr.next()){&#13;
-if (gr.isValidRecord()) { &#13;
-gr.deleteRecord();&#13;
-gs.setProperty("x_snc_userreview.cert_audit_definition",'');&#13;
-}&#13;
-}&#13;
-&#13;
-//used to modify the Module so the UAR is blank&#13;
-var mod = new GlideRecord('sys_app_module');&#13;
-mod.addQuery('sys_id','dd9c71514f0df2009457ac118110c744');&#13;
-mod.query();&#13;
-while (mod.next()) {&#13;
-mod.query='sys_id=';&#13;
-mod.update();&#13;
-}&#13;
-&#13;
-}</query>
+        <query>sysparm_query=audit.nameSTARTSWITHUser%20Access%20Review%20Schedule%5EGROUPBYstate&amp;sysparm_list_mode=grid</query>
         <report/>
         <roles/>
         <survey/>
         <survey_overwrite>true</survey_overwrite>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-02-19 06:53:55</sys_created_on>
+        <sys_created_on>2017-02-19 16:13:25</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>b6f052954f4df2009457ac118110c7b5</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_name>Reset Instance</sys_name>
+        <sys_id>aa211ce91309f200a79f73304244b0d7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Results</sys_name>
         <sys_overrides/>
         <sys_package display_value="User Access Review" source="x_snc_userreview">d8d41d554f49f2009457ac118110c76b</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="User Access Review">d8d41d554f49f2009457ac118110c76b</sys_scope>
-        <sys_update_name>sys_app_module_b6f052954f4df2009457ac118110c7b5</sys_update_name>
+        <sys_update_name>sys_app_module_aa211ce91309f200a79f73304244b0d7</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-02-19 07:23:58</sys_updated_on>
+        <sys_updated_on>2017-02-19 16:26:45</sys_updated_on>
         <timeline_page/>
-        <title>Reset Instance</title>
+        <title>Results</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>

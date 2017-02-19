@@ -17,15 +17,16 @@
         <name/>
         <order>920</order>
         <override_menu_roles>false</override_menu_roles>
-        <query>if (!x_snc_userreview.cert_audit_definition) {&#13;
+        <query>if (!gs.getProperty('x_snc_userreview.cert_audit_definition') &amp;&amp; gs.getProperty('x_snc_userreview.enabled')) {&#13;
 &#13;
 //creates the UAR audit definition&#13;
 var gr = new GlideRecord('cert_audit_definition');&#13;
 gr.initialize();&#13;
 gr.name = 'User Access Review';&#13;
 gr.description = 'This Data Certification Definition is used for the User Access Review Application';&#13;
-gr.days_to_complete =gs.getProperty(' x_snc_userreview.days_to_complete;');&#13;
 gr.insert();&#13;
+gr.days_to_complete = gs.getProperty('x_snc_userreview.days_to_complete');&#13;
+gr.update();&#13;
 gs.setProperty("x_snc_userreview.cert_audit_definition",gr.sys_id);&#13;
 gs.info('Set x_snc_userreview.cert_audit_definition to '+gr.sys_id);&#13;
 &#13;
@@ -55,7 +56,12 @@ m2m.cert_audit_definition=gr.sys_id;&#13;
 m2m.cert_schedule=cs.sys_id;&#13;
 m2m.insert();&#13;
 &#13;
-}</query>
+} else if (!gs.getProperty('x_snc_userreview.enabled')) {&#13;
+gs.info('User Access Review is not enabled. Please enable the x_snc_userreview.enabled property');&#13;
+} else {&#13;
+gs.info('User Access Review already initialized');&#13;
+}&#13;
+</query>
         <report/>
         <roles/>
         <survey/>
@@ -67,7 +73,7 @@ m2m.insert();&#13;
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>fac575994fc9f2009457ac118110c794</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_name>Initialize Instance</sys_name>
         <sys_overrides/>
         <sys_package display_value="User Access Review" source="x_snc_userreview">d8d41d554f49f2009457ac118110c76b</sys_package>
@@ -76,7 +82,7 @@ m2m.insert();&#13;
         <sys_scope display_value="User Access Review">d8d41d554f49f2009457ac118110c76b</sys_scope>
         <sys_update_name>sys_app_module_fac575994fc9f2009457ac118110c794</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-02-19 07:46:32</sys_updated_on>
+        <sys_updated_on>2017-02-19 16:20:23</sys_updated_on>
         <timeline_page/>
         <title>Initialize Instance</title>
         <uncancelable>false</uncancelable>
