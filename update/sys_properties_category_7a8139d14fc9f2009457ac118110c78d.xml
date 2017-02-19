@@ -7,7 +7,7 @@
         <sys_created_on>2017-02-19 04:34:21</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>7a8139d14fc9f2009457ac118110c78d</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>User Access Review</sys_name>
         <sys_package display_value="User Access Review" source="x_snc_userreview">d8d41d554f49f2009457ac118110c76b</sys_package>
         <sys_policy/>
@@ -15,11 +15,11 @@
         <sys_scope display_value="User Access Review">d8d41d554f49f2009457ac118110c76b</sys_scope>
         <sys_update_name>sys_properties_category_7a8139d14fc9f2009457ac118110c78d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-02-19 18:54:30</sys_updated_on>
+        <sys_updated_on>2017-02-19 20:50:13</sys_updated_on>
         <title><![CDATA[<p>These are the properties for the User Access Review Application.</p>
 <p>There are three parts to the solution.</p>
 <p> </p>
-<p><img style="align: baseline;" title="" src="sys_attachment.do?sys_id&#61;fb6670e14f8536009457ac118110c7c0" alt="" align="baseline" border="" hspace="" vspace="" /></p>]]></title>
+<p><img style="align: baseline;" title="" src="sys_attachment.do?sys_id&#61;01f01dad4fc536009457ac118110c73b" alt="" align="baseline" border="" hspace="" vspace="" /></p>]]></title>
     </sys_properties_category>
     <sys_translated_text action="delete_multiple" query="documentkey=7a8139d14fc9f2009457ac118110c78d"/>
 </record_update>
